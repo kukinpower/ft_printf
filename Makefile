@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+         #
+#    By: romankukin <romankukin@student.42.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/29 17:38:53 by mkristie          #+#    #+#              #
-#    Updated: 2020/06/09 20:39:49 by mkristie         ###   ########.fr        #
+#    Updated: 2020/07/07 22:01:41 by romankukin       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME = libftprintf.a
-LIBFT = libft/
+LIBFT = libft/libft/
 FLAGS = -Wall -Wextra -Werror #-g
 HEADER = libftprintf.h
 
@@ -44,7 +44,7 @@ all:	$(NAME)
 
 $(NAME): $(OBJS)
 		@make -C $(LIBFT)
-		@cp libft/libft.a ./$(NAME)
+		@cp libft/libft/libft.a ./$(NAME)
 		@ar rcs $(NAME) $(OBJS)
 		@echo "Compiled"
 

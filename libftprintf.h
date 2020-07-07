@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   libftprintf.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+        */
+/*   By: romankukin <romankukin@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/29 22:42:42 by mkristie          #+#    #+#             */
-/*   Updated: 2020/06/12 11:57:20 by mkristie         ###   ########.fr       */
+/*   Updated: 2020/07/07 22:00:55 by romankukin       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFTPRINTF_H
 # define LIBFTPRINTF_H
-# include "libft/libft.h"
+# include "libft/libft/libft.h"
 # include <stdarg.h>
 
 typedef struct		s_go
