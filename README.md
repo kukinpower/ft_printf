@@ -15,6 +15,14 @@
  
  Flags:			`[-0.*]` and minimum field width with all conversions
 
+### Install
+
+`git clone https://github.com/kukinpower/ft_printf.git`
+
+`cd ft_printf`
+
+`git submodule update --init` to clone `libft`
+
 ### Compilation
 
 `make` to compile library
