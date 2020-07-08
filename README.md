@@ -1,7 +1,7 @@
 # ft_printf
 
 ## Recoded `printf()` function.
-<img src="./image.jpg" width="960" height="505">
+<img src="./image.jpg" width=80% height=80%>
 
 <span>Photo by <a href="https://unsplash.com/@laurachouette?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Laura Chouette</a> on <a href="/s/photos/typewriter?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
