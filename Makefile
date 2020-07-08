@@ -36,33 +36,34 @@ SRCS = ft_printf.c \
 		check_flag.c \
 		handle_flag_dot.c \
 
+MTHR ?= -j
+
 OBJS = $(SRCS:.c=.o)
 
-.PHONY: all, clean, fclean, re, bonus, main, mainclean
+.PHONY: all clean fclean re bonus main mainclean
 
-all:	$(NAME)
+all:	#$(NAME)
+		@make -C $(LIBFT)
+		@$(MAKE) $(MTHR) $(NAME)
 
 $(NAME): $(OBJS)
-		@make -C $(LIBFT)
 		@cp libft/libft/libft.a ./$(NAME)
 		@ar rcs $(NAME) $(OBJS)
-		@echo "Compiled"
+		@echo "Libftprintf compiled"
 
 %.o: %.c 
 		@gcc $(FLAGS) -I $(HEADER) -c $< -o $@
 
 main:	re
 		@gcc main.c libftprintf.a -I libftprintf.h $(FLAGS)
-		@./a.out #| cat -e
+		#@./a.out #| cat -e
 
 mainclean:	
 			@/bin/rm -f main.o
 			@/bin/rm -f a.out
-			@echo "main cleaned"
 
 clean:
 		@make clean -C $(LIBFT)
-		@echo "libft cleaned"
 		@/bin/rm -f $(OBJS)
 		@echo "libftprintf cleaned"
 
