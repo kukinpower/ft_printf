@@ -6,7 +6,7 @@
 #    By: romankukin <romankukin@student.42.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/29 17:38:53 by mkristie          #+#    #+#              #
-#    Updated: 2020/07/07 22:01:41 by romankukin       ###   ########.fr        #
+#    Updated: 2020/07/11 21:51:33 by mkristie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ SRCS = ft_printf.c \
 		check_flag.c \
 		handle_flag_dot.c \
 
-MTHR ?= -j
+PARALLEL ?= -j
 
 OBJS = $(SRCS:.c=.o)
 
@@ -44,7 +44,7 @@ OBJS = $(SRCS:.c=.o)
 
 all:	#$(NAME)
 		@make -C $(LIBFT)
-		@$(MAKE) $(MTHR) $(NAME)
+		@$(MAKE) $(PARALLEL) $(NAME)
 
 $(NAME): $(OBJS)
 		@cp libft/libft/libft.a ./$(NAME)
