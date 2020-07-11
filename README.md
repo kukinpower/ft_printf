@@ -10,10 +10,15 @@
  format spec construction:
  `%[flags][width][.precision][length]type`
 
- my ft_printf works with:
- Conversions:	`[cspdiuxX%]`
+#### my ft_printf works with:
+
+Conversions:	`[cspdiuxX%]`
  
- Flags:			`[-0.*]` and minimum field width with all conversions
+Flags:			`[-0.*]` and minimum field width with all conversions
+
+Also prints `0` or `'\0'` with `%c` conversion. To check this you can use `| cat -e` on output (as in makefile `main` rule).
+
+Details about displaying printed `0` on [stackoverflow](https://stackoverflow.com/questions/62235315/what-do-these-signs-mean)
 
 ### Install
 
